@@ -1,0 +1,123 @@
+body {
+  margin: 0;
+  height: 100%;
+}
+
+#bg {
+  background-image: url("../images/loginbg.jpg");
+  background-size: cover;
+  height: 100vh;
+}
+
+#navbar {
+  background-color: #ffffff;
+  overflow: hidden;
+  position: sticky;
+}
+
+#table{
+  margin-top: 3%;
+  margin-left: 3%;
+  margin-right: 3%;
+  width: 90%;
+  font-size: 0.8em;
+}
+
+.cardbody {
+  margin-left: 37%;
+  position: absolute;
+  background-color: #f2f2f2;
+  margin-top: 12%;
+  padding: 45px;
+  border-radius: 10px;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+}
+
+.cardbody h2 {
+  color: #000000;
+  margin-top: 10px;
+  margin-bottom: 45px;
+  line-height: 1em;
+  font-weight: 500;
+  padding-left: 10px;
+  border-left: 5px solid #e91e63;
+}
+
+.cardbody .inputbox {
+  position: relative;
+  width: 300px;
+  height: 46px;
+  margin-bottom: 35px;
+}
+
+.cardbody .inputbox:last-child {
+  margin-bottom: 0;
+}
+
+.cardbody .inputbox input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  border: 1px solid #111;
+  background: transparent;
+  padding: 10px;
+  border-radius: 4px;
+  box-sizing: border-box;
+  outline: none;
+  font-size: 16px;
+  color: #111;
+  font-weight: 300;
+}
+
+.cardbody .inputbox span {
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  padding: 10px;
+  display: inline-block;
+  font-size: 16px;
+  color: #111;
+  font-weight: 300;
+  transition: 0.1s;
+  pointer-events: none;
+}
+
+.cardbody .inputbox input:focus ~ span,
+.cardbody .inputbox input:valid ~ span {
+  transform: translateX(-10px) translateY(-32px);
+  font-size: 12px;
+}
+
+.cardbody .inputbox input[type="submit"] {
+  background: #2196f3;
+  color: #fff;
+  border: none;
+  max-width: 120px;
+  cursor: pointer;
+  font-weight: 500;
+  border-top-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.cardbody .inputbox input[type="submit"]:hover {
+  background: #e91e63;
+}
+
+.cardbody a {
+  text-decoration: none;
+}
+
+
+.thead{
+  background-color: #ae1d4e;
+  color: #f2f2f2;
+  text-align: center;
+  border-color: #000000;
+}
+
+.tbody{
+  color: #000000;
+  text-align: center;
+  border-color: #000000;
+}
