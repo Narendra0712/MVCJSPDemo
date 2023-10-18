@@ -9,12 +9,6 @@ body {
   height: 100vh;
 }
 
-#navbar {
-  background-color: #ffffff;
-  overflow: hidden;
-  position: sticky;
-}
-
 #table{
   margin-top: 3%;
   margin-left: 3%;

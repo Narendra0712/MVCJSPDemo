@@ -24,54 +24,21 @@ response.setDateHeader("Expires", 0);
 	<%
 	if (!session.isNew() && session.getAttribute("USERNAME") != null) {
 	%>
-	<div class="container">
-		<jsp:include page="navbar.jsp"></jsp:include>
+	<nav>
+	<div class="navigation">
+		<img src="../images/logo.png" alt="" height="50"></img>
+
+		<ul class="nav navbar-nav navbar-right">
+		<li><h3 style="color: green">Welcome ${sessionScope.USERNAME}</h3></li>
+			<li><a href="../controller/logout.jsp"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
+		</ul>
 	</div>
+</nav>
 	<%
 	} else {
 	response.sendRedirect("../input.jsp?msg=notloggedin");
 	}
 	%>
-	<div class="container">
-		<table class="table table-bordered table-hover">
-			<thead class="thead">
-				<tr>
-					<th rowSpan="2">Satement Date</th>
-					<th rowSpan="2">To Date</th>
-					<th rowSpan="2">From Date</th>
-					<th rowSpan="2">Start Pdf Generation</th>
-					<th colSpan="3">Pdf Generation Status</th>
-					<th rowSpan="2">View Samples</th>
-					<th rowSpan="2">Start Mailing Process</th>
-					<th colSpan="3">Mailing Process Status</th>
-				</tr>
-				<tr>
-					<th>Pdf Remaining</th>
-					<th>Pdf Generated</th>
-					<th>Total Pdfs</th>
-					<th>Mails Remaining</th>
-					<th>Mails Sent</th>
-					<th>Total Mails</th>
-				</tr>
-			</thead>
-			<tbody class="tbody">
-				<tr>
-					<td>1</td>
-					<td>2</td>
-					<td>3</td>
-					<td>4</td>
-					<td>5</td>
-					<td>6</td>
-					<td>7</td>
-					<td>8</td>
-					<td>9</td>
-					<td>10</td>
-					<td>11</td>
-					<td>12</td>
-				</tr>
-			</tbody>
-		</table>
-	</div>
 </body>
 </html>
 
